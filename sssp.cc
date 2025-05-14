@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
         argv[0]);
     exit(EXIT_FAILURE);
   }
-  char c;
+  int c;
   bool weighted = false;
   bool symmetrized = false;
   bool verify = false;

@@ -23,11 +23,11 @@ ifdef DEBUG
 CPPFLAGS += -DDEBUG -Og
 else ifdef PERF
 CC = g++
-CPPFLAGS += -Og -mcx16 -march=native -g
+CPPFLAGS += -Og -march=native -g
 else ifdef MEMCHECK
-CPPFLAGS += -Og -mcx16 -DPARLAY_SEQUENTIAL
+CPPFLAGS += -Og -DPARLAY_SEQUENTIAL
 else
-CPPFLAGS += -O3 -mcx16 -march=native
+CPPFLAGS += -O3 -march=native
 endif
 
 ifdef STDALLOC
